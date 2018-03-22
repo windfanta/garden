@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <title>SHIN SUNGMIN</title>
 <meta name="viewport" content="width=device-width, user-scalable=yes">
-<link href="css/style.css" rel="stylesheet">
+<link href="dist/style.css" rel="stylesheet">
 <link href="//fonts.googleapis.com/earlyaccess/notosanskr.css" rel="stylesheet">
 <link href="//use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">
 </head>
@@ -53,7 +53,7 @@
         <div class="cont">
           <ul>
             <li class="img">
-              <img src="https://firebasestorage.googleapis.com/v0/b/vue-project-4f4f0.appspot.com/o/garden%2Fimages%2Fimg-temp.jpg?alt=media&token=b530df83-76d8-437b-b75b-4ae8dc277c37" alt="사진">
+              <img src="src/images/img-temp.jpg" alt="사진">
             </li>
             <li class="name">SHIN SUNGMIN</li>
             <li class="position">Web Ui Developer</li>
@@ -86,7 +86,7 @@
     <!-- // #sectionAbout(소개) -->
 
 
-    <section id="sectionSKill">
+    <section id="sectionSkill">
       <div class="wrap_section">
         <div class="tit">
           <h2>SKILLS</h2>
@@ -216,7 +216,7 @@
         </div>
       </div>
     </section>
-    <!-- // #sectionSKill -->
+    <!-- // #sectionSKill(스킬) -->
 
     <section id="sectionPort">
       <div class="wrap_section">
@@ -257,13 +257,13 @@
 
           <div class="list">
             <ul>
-              <!-- init list from firebase -->
+              <!-- init list -->
             </ul>
           </div>
         </div>
       </div>
     </section>
-    <!-- // #sectionPort -->
+    <!-- // #sectionPort(포트폴리오) -->
 
 
   </div>
@@ -278,26 +278,7 @@
 <!-- // #wrap -->
 
 <script src="//www.gstatic.com/firebasejs/4.9.0/firebase.js"></script>
-<script src="js/app.min.js"></script>
-<script>
-var board = new Board({
-  ele: '#sectionPort .list ul',
-  config:{
-    apiKey: "AIzaSyAHk5pa9KbSdDYh6PLL3Ty7z3j5wDxbmD0",
-    authDomain: "vue-project-4f4f0.firebaseapp.com",
-    databaseURL: "https://vue-project-4f4f0.firebaseio.com",
-    projectId: "vue-project-4f4f0",
-    storageBucket: "vue-project-4f4f0.appspot.com",
-    messagingSenderId: "861354867327"
-  },
-  count: 'all',
-  onReady: function() {
-    setTimeout(function(){
-      document.querySelector('#sectionPort').classList.add('on');
-    }, 1000);
-  }
-});
-</script>
+<script src="dist/bundle.js"></script>
 </body>
 
 </html>
